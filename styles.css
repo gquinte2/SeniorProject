@@ -1,0 +1,531 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+body{
+    background-color: #091d26;
+}
+
+figure{
+    position: relative; /* Ensure the figure container is relatively positioned */
+    display: inline-block;
+}
+figcaption{
+    transform: rotate(180deg);
+    background-color: rgb(255 255 255 / 50%); /* 50% transparent */
+    writing-mode: vertical-rl;
+    position: absolute; /* Position the figcaption absolutely relative to its container */
+    color: #fff; /* Text color for the caption */
+  
+  
+}
+
+header a{
+    text-decoration: none;
+    color: #094044;
+}
+h2{
+    visibility: hidden;
+}
+main button:hover{
+    color:#d84f2a;
+}
+
+
+@media screen and (max-width: 599px) {
+  
+
+    figcaption{
+        padding: 1.5%;
+        padding: 1.5%;
+        margin-bottom: 6%;
+    }
+    
+    
+    header a {
+        font-size: 16px;
+    margin: -30px 0 -30px 0;
+    padding:23px
+    }
+  header{
+    background-color: white;
+  }
+    
+    label{
+    
+        width: 50%;
+        color: #d84f2a;
+        
+    }
+    #menu-toggle {
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    display:block;
+    position:relative;
+    right:10px;
+    user-select:none;
+    width:100%;
+    z-index:1
+    }
+    
+    #menu-toggle a {
+    color:#232323;
+    text-decoration:none;
+    width:100%
+    }
+    
+    li {
+    border-bottom:solid;
+    width:100%
+    }
+    
+    #menu-toggle a:hover {
+    background-color:#F6D64A;
+    }
+    
+    #menu-toggle input {
+    -webkit-touch-callout:none;
+    cursor:pointer;
+    display:block;
+    float:right;
+    height:30px;
+    opacity:0;
+    padding:0;
+    position:absolute;
+    right:-5px;
+    top:-7px;
+    width:30px;
+    z-index:2
+    }
+    
+    #menu-toggle label {
+        -webkit-transform-origin: 4px 0;
+        -webkit-transition: all .3s ease;
+        background: #d6c4b0;
+        display: block;
+        display: block;
+        float: right;
+        height: 50px;
+        height: 46px;
+        position: relative;
+        right: -10px;
+        bottom: 25vw;
+        transform-origin: 4px 0;
+        transition: all .3s ease;
+        width: 25%;
+        z-index: 40;
+        padding-left: 40px;
+        padding-top: 14px;
+    
+    }
+    
+    #menu-toggle input:checked+label+ul {
+        visibility: visible;
+        background: #d84f2a;
+        display: flex;
+        flex-direction: column;
+        height: 220px;
+        justify-content: center;
+        margin: -20% -10px 0 0;
+        text-align: center;
+        width: 55%;
+        z-index: 31;
+    }
+    
+    
+    #menu-toggle input:checked+label+ul li {
+        visibility: visible;
+    border-bottom:solid;
+    height:60px;
+    padding:unset;
+    padding-bottom:20px;
+    padding-top:20px;
+    width:100%
+    }
+    
+    
+    #menu-toggle input:checked+label {
+    
+   
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+    width: 46.8%;
+    }
+    
+    ul {
+        visibility: hidden;
+    -o-transition:left .3s ease;
+    -webkit-transition:left .3s ease;
+    height:294px;
+    list-style-type:none;
+    margin:-357px -14px -125px 137px;
+    padding-top:103px;
+    position:absolute;
+    right:386px;
+    transition:left .3s ease;
+    width:100%
+    }
+    
+    li a:hover {
+    width:100px
+    }
+    
+    ul li {
+    font-size:22px;
+    }
+    
+    nav ul li a {
+    margin:40px
+    }
+    
+    header li a {
+    width:500px
+    }
+    
+    #menu-toggle input:checked~ul {
+    right:0
+    }
+
+
+    header img{
+        padding-top: 7%;
+        padding-left: 5%;
+        width: 30%;
+    }
+
+    main figure img{
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+     
+       
+       
+    }
+
+  
+  figure{
+    padding-bottom: 30px;
+  }
+    
+   figcaption{
+    background-color: rgb(255 255 255 / 50%);
+   }
+ 
+ 
+    .animal, .landscape{
+    
+        display: inline;
+        position: absolute;
+        margin-top: 30%;
+        bottom: 0;
+        left: 20%;
+        color: #fff;
+
+    }
+    
+    .headshots{
+       
+        display: inline;
+        position: absolute;
+        margin-top: 50%;
+        bottom: 0;
+        left: 20%;
+      
+    }
+
+    .product{
+      
+        display: inline;
+        position: absolute;
+        margin-top: 45%;
+        bottom: 0;
+        left: 20%;
+        color: #fff;
+    }
+    
+    }
+   
+
+
+   
+
+    figcaption a{
+        color: #000000;
+        text-decoration: none;
+    }
+
+    figcaption a:hover{
+        color: #ffffff;
+    }
+
+ 
+    footer{
+      
+        background-color: #d6c4b0;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+
+    /* Gallery container styles */
+    .gallery-overlay {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    .gallery-content {
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        overflow: scroll;
+        width: 80%;
+        z-index: 1010; /* Ensure it's above overlay */
+    }
+
+    /* Close button styles */
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    main button{
+        background-color: rgb(255 255 255 / 0%);
+        border: none;
+        padding:8px;
+       
+        
+    }
+
+    
+
+ input#toggle{
+        display: none;
+    }
+
+    @media screen and (min-width: 600px) {
+       
+        body {
+            display: grid;
+       
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+        }
+    
+        /* Adjustments for different sections based on grid areas */
+        main {
+            grid-area: 1 / 1 / 3 / 3;
+            /* Additional styles as needed */
+        }
+    
+        header {
+            grid-area: 1 / 3 / 3 / 4;
+            /* Additional styles as needed */
+        }
+    
+        footer {
+            grid-area: 3 / 1 / 4 / 4;
+            /* Additional styles as needed */
+        }  
+
+
+        header img{
+
+           
+            width: 80%;
+        margin-left: 10%;
+        margin-top: 20%;
+        }
+        figure img{
+            width: 200px;
+            
+        }
+
+        header{
+            background-color: #fff;
+        
+       margin-left: 30%; 
+        float: right;
+        display: flex;
+        align-content: space-between;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+            
+        }
+
+      
+           
+           nav{
+            padding-right: 18%;
+            text-align: right;
+            }
+
+           main {
+            border-right: 2px solid #d84f2a;
+            background-color: #091d26;
+        width: 115%;
+        padding-bottom: 7%;
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 9% 0px;
+}
+           
+
+            .firstpic { padding-left: 30px;
+                padding-top: 30px;
+                width: 100%;
+             }
+            .secondpic { padding-left: 20%;
+                width: 50%;
+                height: 82%;
+                object-fit: cover;
+            }
+            .thirdpic { 
+                margin-left: 10%;
+                padding-top: 0px; 
+        width: 50%;
+        height: 90%;
+        object-fit: cover;
+            }
+            .fourthpic { 
+                margin-left: -27%;
+             
+      
+        width: 99%;
+      
+            }
+
+            
+            .animal{
+          
+                margin-top: 30%;
+                bottom: 0;
+                left: 15%;
+               
+        
+            }
+            .landscape{
+                left:26%;
+            }
+
+            .headshots{
+                left: 16%;
+            }
+             
+            .product{
+                left:-18%;
+            }
+
+            figure{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            h2{
+                visibility: hidden;
+            }
+
+            header label{
+                visibility: hidden;
+            }
+
+            header nav ul li a{
+                font-size: 30px;
+                
+            }
+            header li{
+                padding-bottom: 30px;
+            }
+           
+            a:active, a:visited, a:focus {
+                text-decoration: none;
+        border-bottom: 10px solid blue;
+        display: inline-block;
+        width: 130px;
+        padding-right: 30%;
+            }
+
+            main button{
+                font-size: 16px;
+            }
+    }
+
+
