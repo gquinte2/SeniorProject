@@ -67,7 +67,7 @@ html, body {
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 body{
-    background-image: url(/images/newbac.png);
+    background-image: url(images/newbac.png);
     background-size: 190px;
     
 }
@@ -169,7 +169,7 @@ footer{
 ;
 }
 main{
-    background-image: url(/images/newbac.png);
+    background-image: url(images/newbac.png);
     background-size: 190px;
 }
 header{
@@ -494,7 +494,7 @@ form{
  
     footer{
       
-        background-image: url(/images/newbac.png);
+        background-image: url(images/newbac.png);
             background-size: 150px;
         text-align: center;
    
