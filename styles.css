@@ -127,12 +127,14 @@ input[type="submit"] {
 	margin-top: 20px;
 	margin-left: 100px;
 	margin-right: 100px;
-	background-color: beige;
+	background-color: black;
 	border: none;
+    color: #fff;
 }
 input[type="submit"]:hover {
-	background-color: #000000;
-	color: #fff;
+	background-color: lightgrey;
+    color: #483C32;
+	
 }
 footer{
 	color: #fff;
@@ -571,7 +573,7 @@ input#toggle{
 	}
 	a:active, a:hover, a:focus{
 	text-decoration: none;
-	border-block-end: 20px solid #483C32;
+	border-block-end: 20px solid lightgray;
 	display: block;
 	}
 	main button{
