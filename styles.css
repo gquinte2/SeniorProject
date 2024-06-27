@@ -96,6 +96,9 @@ figcaption{
 	color: #fff;
 
 }
+#section2 h3{
+    visibility: hidden;
+}
 header a{
 	text-decoration: none;
 	color: #094044;
@@ -157,6 +160,8 @@ header{
 	writing-mode: vertical-lr;
 	margin-right: 10px;
 	transform: rotate(180deg);
+    text-shadow: 0 0 3px #DC3932;
+
 }
 #section2{
 	color: #fff;
