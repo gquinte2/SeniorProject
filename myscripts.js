@@ -24,3 +24,30 @@ function showSection(sectionId) {
       selectedSection.classList.add('active');
     }
   }
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+   
+        let formData = new FormData(form);
+
+        // Send form data via AJAX
+        fetch('/send_email', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Display custom popup message
+            alert("Thank you for reaching out! I'll be in touch soon."); 
+            form.reset(); // Clear form 
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Oops! Something went wrong.'); // Display error message 
+        });
+    });
+});

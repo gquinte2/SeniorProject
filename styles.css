@@ -82,7 +82,7 @@ body{
 
   .content-section {
     display: none; /* Hide all content sections initially */
-    padding: 0 18px;
+   
   /* Adjust according to your nav height */
   }
   .content-section.active {
@@ -112,7 +112,7 @@ header a{
     text-decoration: none;
     color: #094044;
 }
-h2{
+header h2{
     visibility: hidden;
 }
 main button:hover{
@@ -176,6 +176,37 @@ header{
     background-color: #fff;
 }
 
+#section2 h2{
+  
+    padding-bottom: 16px;
+
+    font-weight: 800;
+    font-size: 30px;
+    writing-mode: vertical-lr;
+    margin-right: 10px;
+
+    
+  
+    transform: rotate(180deg);
+}
+#section2{
+    color: #fff;
+    padding: 0 30px;
+}
+
+#section2 img{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+}
 h3{
     writing-mode: vertical-lr;
     -ms-transform: rotate(180deg);
@@ -197,11 +228,23 @@ form{
     padding-top: 30px;
     color: #000000;
     background-color: #DC3932;
-    width: 97%;
+    width: 94%;
     margin: 0 auto;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+}
+
+form input{
+    font-size: 14px;
 }
 .contactform img{
-    width: 97%;
+    width: 94%;
     
     object-fit: cover;
     height: 300px;
@@ -219,9 +262,32 @@ form{
     transform: unset;
     padding-bottom: 40px;
     font-weight: 800;
+
+}
+#section3 img{
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
 }
 
-@media screen and (max-width: 699px) {
+footer{
+    text-decoration: overline;
+}
+
+#aboutme{
+    display: flex;
+    justify-content: space-between;
+ 
+    padding-bottom: 40px;
+   
+}
+
+@media screen and (max-width: 899px) {
     header{
         display: flex;
         justify-content: space-between;
@@ -244,7 +310,7 @@ form{
         background-color: #fff;
     padding-bottom: 20px;
         margin: 0 auto;
-        width: 92%;
+        width: 94%;
       
         /* background-image: url(/images/back.png); */
         background-size: 190px;
@@ -475,6 +541,12 @@ form{
         left: 20%;
         color: #fff;
     }
+
+    footer{
+        padding-bottom: 13px;
+    padding-top: 40px;
+
+    }
     
     }
    
@@ -564,8 +636,9 @@ form{
  input#toggle{
         display: none;
     }
+    
 
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 900px) {
        
 
         body {
@@ -681,7 +754,7 @@ margin-left: -90px;
         
             }
             .landscape{
-                left:26%;
+                left:16%;
             }
 
             .headshots{
@@ -689,7 +762,7 @@ margin-left: -90px;
             }
              
             .product{
-                left:10%;
+                left:14%;
             }
 
             figure{
@@ -765,16 +838,17 @@ margin-right: -90%;
             }
 
             header{
-                width: 80%;
-                max-width: 400px;
+                height: 740px;
+                
+                width: 300px;
             }
 
             #section3{
-             margin-right: 10%;
+             margin-right: 20%;
                 height: 650px;
             }
             #section3 img{
-                margin-left: 10px;
+                margin-left: 25px;
             }
 
             input[type="submit"] {
@@ -783,11 +857,29 @@ margin-right: -90%;
               
             }
 
+            #section2{
+                grid-template-columns: unset;
+                        grid-row-gap: 0;
+                        padding: unset;
+                        padding: 30px;
+                        max-width: 800px;
+            }
+
+            #section2 h2{
+                visibility: visible;
+            }
+
+            #aboutme{
+                align-items: center;
+            }
+            
+
+         
           
     }
 
-    /* @media screen and (min-width: 760px) {
-        .contactform{
-            width: 130%;
-        }
-    } */
+    /* @media screen and (min-width: 660px) {
+        /* #section2{
+            grid-template-columns: repeat(2, 1fr);
+        } */
+    
